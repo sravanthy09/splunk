@@ -7,17 +7,17 @@ from datetime import datetime, timedelta
 def on_start(container):
     phantom.debug('on_start() called')
     
-    # call 'action_0' block
-    action_0(container=container)
+    # call 'lookup_ip_1' block
+    lookup_ip_1(container=container)
 
     return
 
-def action_0(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None):
-    phantom.debug('action_0() called')
+def lookup_ip_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None):
+    phantom.debug('lookup_ip_1() called')
 
     parameters = []
 
-    phantom.act(action="<undefined>", parameters=parameters, name="action_0")
+    phantom.act(action="lookup ip", parameters=parameters, name="lookup_ip_1")
 
     return
 
